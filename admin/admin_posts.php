@@ -1,0 +1,18 @@
+<?php require "../users/login/check_admin.php";
+try{
+    include '../includes/DatabaseConnection.php';
+    include '../includes/DatabaseFunctions.php';
+
+    $posts = allPosts($pdo);
+    $title = 'Posts List';
+    $totalPosts = totalPosts($pdo);
+
+    ob_start();
+    include 'templates/admin_posts.html.php';
+    $output = ob_get_clean();
+}catch (PDOException $e){
+    $title = 'An error has occured';
+    $output = 'Database error: ' . $e->getMessage();
+}
+include 'templates/admin_layout.html.php';
+?>
