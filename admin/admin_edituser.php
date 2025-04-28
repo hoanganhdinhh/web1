@@ -2,6 +2,7 @@
 include '../includes/DatabaseConnection.php';
 include '../includes/DatabaseFunctions.php';
     try{
+
         $user_image = null;
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $target_dir = "../users/images/";
