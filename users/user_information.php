@@ -5,7 +5,6 @@ include '../includes/DatabaseFunctions.php';
 try {
     $user_id = $_SESSION['UserID'];
     $user = getUser($pdo, $user_id);
-
     $title = 'User Information';
 
     ob_start();

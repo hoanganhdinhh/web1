@@ -1,8 +1,8 @@
 <?php  require "../users/login/check_admin.php";
-try{
-    include '../includes/DatabaseConnection.php';
-    include '../includes/DatabaseFunctions.php';
+include '../includes/DatabaseConnection.php';
+include '../includes/DatabaseFunctions.php';
 
+try{
     $user_id = $_SESSION['UserID'];
     $user = getUser($pdo, $user_id);
     $title = 'User Information';
