@@ -8,7 +8,7 @@
   <form action="contact.php" method="post" class="p-4 bg-light rounded shadow" style="min-width: 500px;">
     <h4 class="mb-3 text-center">Contact Us</h4>
     <div class="mb-3">
-      <textarea name="message" rows="8" class="form-control" placeholder="Send email to Admin"></textarea>
+      <textarea name="message" rows="8" class="form-control" placeholder="Send message to Admin"></textarea>
     </div>
     <button type="submit" class="btn btn-primary w-100">Send Email</button>
   </form>

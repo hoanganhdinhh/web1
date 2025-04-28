@@ -9,8 +9,8 @@ if (isset($_POST['message'])){
     ini_set('error_logfile', 'error.log');
 
    
-    mail('dinhnguyenhoanganh2103@gmail.com', 'Hello from Website', $message, "From: dinhnguyenhoanganh2005@gmail.com");
-    $output = "Thank you for your message we we will get back to you shortly";
+    mail('dinhnguyenhoanganh2103@gmail.com', 'Mail from Website', $message, "From: dinhnguyenhoanganh2005@gmail.com");
+    $output = "Thank you for your message";
 }else{
     $title = "Contact us";
     ob_start();
